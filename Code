@@ -1,0 +1,9 @@
+def test_directory(url):
+
+    data = []
+    data = url.split("\\")
+    while '' in data:
+        data.remove('')
+    information = "\\\\".join([str(item) for item in data])
+    
+    return information
